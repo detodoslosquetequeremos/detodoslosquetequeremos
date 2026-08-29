@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Fer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="jeka-rain" aria-hidden="true">
+            <img class="jeka-drop drop1" src="./images/jeka.png" alt="">
+            <img class="jeka-drop drop2" src="./images/jeka.png" alt="">
+            <img class="jeka-drop drop3" src="./images/jeka.png" alt="">
+            <img class="jeka-drop drop4" src="./images/jeka.png" alt="">
+            <img class="jeka-drop drop5" src="./images/jeka.png" alt="">
+            <img class="jeka-drop drop6" src="./images/jeka.png" alt="">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">F</span><span style="--t: 4.2s;">e</span><span style="--t: 4.4s;">l</span><span style="--t: 4.6s;">i</span><span style="--t: 4.8s;">z</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">C</span><span style="--t: 5.2s;">u</span><span style="--t: 5.4s;">m</span><span style="--t: 5.6s;">p</span><span style="--t: 5.8s;">l</span>
+                        <span style="--t: 6s;">e</span><span style="--t: 6.2s;">a</span><span style="--t: 6.4s;">ñ</span><span style="--t: 6.6s;">o</span><span style="--t: 6.8s;">s</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Haz Clic Aquí
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="./images/fer.png" alt="Fer">
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span><span style="--i: 2;">a</span><span style="--i: 3;">p</span><span style="--i: 4;">p</span><span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span><span style="--i: 8;">i</span><span style="--i: 9;">r</span><span style="--i: 10;">t</span><span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span><span style="--i: 13;">a</span><span style="--i: 14;">y</span><span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decoraciones -->
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;"><img width="20" src="./images/decorate_flower.png" alt=""></div>
+        <div class="decorate_flower--two" style="--t: 15.3s;"><img width="20" src="./images/decorate_flower.png" alt=""></div>
+        <div class="decorate_flower--three" style="--t: 15.6s;"><img width="20" src="./images/decorate_flower.png" alt=""></div>
+        <div class="decorate_bottom"><img src="./images/decorate.png" alt="" width="100"></div>
+        <div class="smiley__icon"><img src="./images/smiley_icon.png" alt="" width="100"></div>
+    </div>
+
+    <!-- Menú de las 7 cartas (Se muestra al hacer clic en el botón principal) -->
+    <div class="cards-overlay" id="cardsOverlay">
+        <i class="fa-solid fa-xmark close-overlay" id="closeCardsOverlay"></i>
+        <h2 class="cards-title">¡Elige una carta!</h2>
+        
+        <div class="cards-container">
+            <div class="card" data-text="HOLIII FEER, felices 16 años tilina.
+
+Honestamente quiero decirte que te quiero muchísimo Fer y me enorgullezco de ti. Tal vez no soy muy buena expresando cuando te aprecio y lo bonito que me la paso contigo cuando jugamos o solo hablamos de cualquier puñetada. Aprecio cada momento que pasamos juntas. Espero que te la pases muy bien en este día y en los próximos días que vienen, quiero desearte otra vez un feliz cumpleaños y aún que ya le había dicho antes..siempre que lo necesites o me necesites estaré ahí, para ayudarte, aconsejarte o apoyarte en todo lo que pueda.
+
+Te quiero mucho Fer y espero que pueda pasar muchos mas cumpleaños contigo y las demás 💕💕💕
+
+">
+                <div class="card-inner"></div>
+            </div>
+            <div class="card" data-text="Aloo fer, primero que nada, feliz cumpleaños weona, no pense q andaría cumpliendo el mismo dia kajskajsa, la vrd, agradezco poder ser tu amistad, aunq hay momentos donde uno o el otro no hable, siempre estamos hablando y teniendo una unión junto con los demás, y apoyándonos entre todos, demuestras siempre ser cariñosa, atenta, buena amiga, y incluso alguien en quien se puede confiar, haces un desmadre chistoso kajskajsa, y yo creo q este dia tiene q ser muy especial para ti, y ten en cuenta q cuentas con nuestro apoyo, nuestro cariño, y si necesitas algo q estaremos para ti, muy buen feliz cumpleaños fer, espero la pases increíble, te queremos 🥺❤️
+
+Cotti.">
+                <div class="card-inner"></div>
+            </div>
+            <div class="card" data-text="fer, feliz cumpleaños. 🎂
+quiero desearte un hermoso cumpleaños y que la pases súper bien. siempre recuerda que tú te mereces todo lo bonito de este mundo, nunca dejes que alguien te haga pensar lo contrario.
+hoy quiero aprovechar también para decirte lo feliz que me siento de ser tu amiga, quiero recordarte lo especial que eres para mí y decirte que te has vuelto una gran amiga en este tiempito que llevamos conociéndonos.
+quiero agradecerte por todos los momentos bonitos y por todas las veces que nos has ayudado a todas a sentirnos mejor cuando hemos pasado por algún momento triste.
+gracias por ser esa persona tan bonita que eres, por cada risa y cada momento compartido.
+gracias por siempre estar, recuerda que yo siempre estaré para ti.
+te amo mucho amiga. 🤎
+franchesca">
+                <div class="card-inner"></div>
+            </div>
+            <div class="card" data-text="FELIZ CUMPLEAÑOS FERRCHISS 🎂🎉
+
+feliz cumpleaños número 16 ferchis, primero que nada feliz cumpleaños hermosa que hoy te la pases increíble junto con tu familia por que hoy es un día súper especial ya que es tu cumpleeee.
+
+quiero darte las gracias de la persona tan maravillosa que eres, agradezco el día en el que te conocí y agradezco de verdad profundamente poder compartir mi vida contigo, que tu seas la niña que más sonrisas me causa, con la que puedo confiar en todo y en la que me apoya profundamente, te amo mucho fer 
+gracias por siempre estar ahí para mí a pesar de problemas que han pasado y podíamos resolver 
+eres la persona más alegre que pude llegar a conocer fer, no entendí aveces muy bien que era una amistad hasta que te conocí a ti y esa es mi razón por la cual siempre quiero estar para ti y apoyarte en todo, te amo enormemente fer!! 
+sé que no es mucho texto como me gustaría pero es lo más sincero que sale de mi corazoncito. 
+att: sw 👩🏽‍❤️‍💋‍👩🏻">
+                <div class="card-inner"></div>
+            </div>
+            <div class="card" data-text="Happy Birthday a esa persona tan especial en mi mundo la dueña de mi corazon una inspiración a ser lo mejor para ella cuidarla amarla sobre todo apoyarla en todo los momentos que ella necesite hace 16 años nació esa hermosa niña que iso que cambiará mi forma de ver la vida a su lado t amo con todo mi corazón te amo de la manera más única en mi vida. Mi vida hay tantas cosas bonitas que quiero decirte, porque sin duda te mereces todo lo bonito del mundo. Estuve pensando en que ¿que hice para tener una persona tan linda como tu?
+Cada que me llega un mensaje tuyo me pone muy feliz, aun asi no hablemos poco en el tracurso del dia tus mensajes hacen que me ponga tan feliz lo único que me faltaría es llorar de la felicidad de sentir esa gran alegria, tu eres lo mas preciado que dios me mando y lo agradezco por haberte puesto en mi vida.">
+                <div class="card-inner"></div>
+            </div>
+            <div class="card" data-text="Felices 16 años, Fer
+
+Quiero desearte un cumpleaños increíble y recordarte lo mucho que valoro tu amistad eres de esas personas que de verdad alegran cualquier momento, ya sea cuando platicamos de cualquier tontería, cuando jugamos o simplemente pasando el rato tienes una personalidad única y un corazón enorme que se nota en todo lo que haces.
+
+Gracias por ser siempre tan atenta, confiable y por sacar tantas risas sabes que puedes contar conmigo para lo que sea, en las buenas y en las malas te mereces todo lo bueno pasala muy bien y disfruta mucho tu día. 💕 
+
+astrid">
+                <div class="card-inner"></div>
+            </div>
+            <div class="card" data-text="FELIZ CUMPLEAÑOS FERRRR
+espero que te la pases muy bien con toda tu familia en este dia tan especial para ti y que podamos seguir celebrando tu cumpleaños muchos años más 🎂 
+
+quiero agradecerte por darme la oportunidad de conocerte y poder ser tu amiga, aunque no tengo mucho tiempo de conocerte me has ayudado demasiado y me alegra saber que tengo una amiga tan buena y confiable como tú.
+
+gracias por haber estado en los momentos donde más decaída estaba, por escucharme tantas horas y por simplemente haber estado ahi para mi.
+
+eres una gran amiga y persona con una personalidad como ninguna otra, gracias por regalarnos tantos buenos momentos juntos y por ser simplemente tu, espero que sigamos festejando tu cumpleaños muchos años más y que sigamos siendo amigas mucho más tiempo, te quiero mucho amiga❣️
+
+miri.">
+                <div class="card-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carta individual abierta con animación de acercamiento -->
+    <div id="cardDetailModal" class="card-detail-modal">
+        <div class="modal-content card-shape">
+            <span class="close-btn" id="closeCardDetail">&times;</span>
+            <div class="modal-inner">
+                <p id="modal-text"></p>
+            </div>
+            <button type="button" class="back-to-cards" id="backToCards">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Volver
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
